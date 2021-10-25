@@ -1,0 +1,30 @@
+pool:
+ vmImage: 'ubuntu-latest'
+trigger:
+- master
+steps:
+- task: CmdLine@2
+  inputs:
+     script: 'chmod -R 755 ./'
+  displayName: 'Set Permissions'
+
+- task: CmdLine@2
+  inputs:
+      script: './mvn.command'
+      workingDirectory: '$(System.DefaultWorkingDirectory)'
+  displayName: 'Resolve Dependencies'    
+  
+- task: CmdLine@2
+  inputs:
+      script: './Run.command -run -project_location "Projects/TestProject" -release "MyRelease" -testset "Regression"'
+      workingDirectory: '$(System.DefaultWorkingDirectory)'
+  displayName: 'Execute CITS Test'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'NUnit'
+    testResultsFiles: 'Projects/TestProject/Results/TestExecution/MyRelease/Regression/Latest/azure.xml'
+    failTaskOnFailedTests: true
+    testRunTitle: 'Test Run'
+    publishRunAttachments: true
+  displayName: 'Publish Reports'
