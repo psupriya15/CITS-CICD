@@ -324,3 +324,12 @@ SLF4J: Actual binding is of type [org.slf4j.helpers.NOPLoggerFactory]
 2021-10-19 12:25:45:10S +0530 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in C:\Users\586126\Work\CITS\CITS2.0\Gitlab\CICD\CITS-Nunit\lib\cognizant-intelligent-test-scripter-engine-2.0.jar
 2021-10-19 12:26:23:10S +0530 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in C:\Users\586126\Work\CITS\CITS2.0\Gitlab\CICD\CITS-Nunit\lib\cognizant-intelligent-test-scripter-engine-2.0.jar
 2021-10-19 12:27:48:10S +0530 [INFO] com.cognizant.cognizantits.ide.main.Main finish:Cognizant Intelligent Test Scripter IDE has been Terminated - [ Total Time : 00:06:51.936 ]
+2021-10-25 23:38:36:10S +0530 [INFO] com.cognizant.cognizantits.ide.main.Main main:Launching Cognizant Intelligent Test Scripter IDE
+2021-10-25 23:38:36:10S +0530 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in C:\Users\586126\Work\CITS\CITS2.0\Gitlab\CICD\GitHub\CITS-CICD\lib\cognizant-intelligent-test-scripter-engine-2.0.jar
+2021-10-25 23:38:39:10S +0530 [INFO] com.cognizant.cognizantits.engine.drivers.ChromeEmulators load:Loading ChromeEmulators from file
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/C:/Users/586126/Work/CITS/CITS2.0/Gitlab/CICD/GitHub/CITS-CICD/lib/slf4j-nop-1.7.28.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/C:/Users/586126/Work/CITS/CITS2.0/Gitlab/CICD/GitHub/CITS-CICD/lib/slf4j-simple-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.helpers.NOPLoggerFactory]
+2021-10-26 11:45:15:10S +0530 [INFO] com.cognizant.cognizantits.ide.main.Main finish:Cognizant Intelligent Test Scripter IDE has been Terminated - [ Total Time : 12:06:42.407 ]
