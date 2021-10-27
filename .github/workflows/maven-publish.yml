@@ -19,7 +19,7 @@ jobs:
       run: ./mvn.command
       shell: sh
     - name: Execute CITS Test
-      run: ./Run.command -run -project_location "Projects/TestProject" -release "MyRelease" -testset "Regression"
+      run: ./Run.command -run -project_location "Projects/TestProject" -release "MyRelease" -testset "Regression" -setEnv "run.ExecutionMode=Grid" -setEnv "run.RemoteGridURL=https://nehadeshmukh_rsUbqj:b7y1ExMZspHZyJc1pHV7@hub-cloud.browserstack.com/wd/hub"
       shell: sh
     - # "Error: the step 'PublishTestResults@2' does not have a conversion path yet"
       name: Publish Reports
