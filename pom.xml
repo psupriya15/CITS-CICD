@@ -38,7 +38,19 @@
 		<pdfextentreporter.version>0.3</pdfextentreporter.version>
 		<pdfbox.version>2.0.24</pdfbox.version>
     </properties>
-    
+    <repositories>
+		<repository>
+			<id>com.sikulix</id>
+			<name>com.sikulix</name>
+			<url>https://oss.sonatype.org/content/groups/public</url>
+			<layout>default</layout>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</repository>
+	</repositories>
+
 	<dependencies>
         <dependency>
             <groupId>org.openjfx</groupId>
