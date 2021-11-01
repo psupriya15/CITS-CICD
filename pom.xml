@@ -175,7 +175,7 @@
             <version>1.12</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.sikuli/sikuli-script -->
-        <!--<dependency>
+        <dependency>
             <groupId>com.sikulix</groupId>
             <artifactId>sikulixapi</artifactId>
             <version>1.1.4-SNAPSHOT</version>
@@ -202,7 +202,7 @@
             <groupId>com.sikulix</groupId>
             <artifactId>sikulixlibslux</artifactId>
             <version>${sikuli.version}</version>
-        </dependency>-->
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
